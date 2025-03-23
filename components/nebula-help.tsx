@@ -38,13 +38,13 @@ export default function NebulaHelp() {
             <h2 className="text-4xl font-bold text-white mb-6">Comment Nebula peut vous aider</h2>
             <div className="text-gray-300 space-y-4">
               <p>
-                L'astrologie n'est qu'une des nombreuses choses que Nebula a à offrir. Nous avons des conseillers
+                L&aposastrologie n&aposest qu&aposune des nombreuses choses que Nebula a à offrir. Nous avons des conseillers
                 expérimentés qui se spécialisent dans les horoscopes, la compatibilité zodiacale, les cartes de tarot,
-                la chiromancie, et d'autres techniques psychiques dont vous n'avez peut-être jamais entendu parler.
+                la chiromancie, et d&aposautres techniques psychiques dont vous n&aposavez peut-être jamais entendu parler.
               </p>
               <p>
-                Ils sont toujours là pour vous. Qu'il s'agisse de votre vie amoureuse, de votre carrière, ou de tout
-                autre aspect de votre vie, vous pouvez toujours compter sur l'aide de nos conseillers psychiques.
+                Ils sont toujours là pour vous. Qu&aposil s&aposagisse de votre vie amoureuse, de votre carrière, ou de tout
+                autre aspect de votre vie, vous pouvez toujours compter sur l&aposaide de nos conseillers psychiques.
               </p>
             </div>
           </div>

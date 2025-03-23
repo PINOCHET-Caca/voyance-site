@@ -21,7 +21,7 @@ export default function GlobalError({ error, reset }: GlobalErrorProps) {
           <div className="max-w-md text-center">
             <h2 className="text-2xl font-bold mb-4">Erreur critique</h2>
             <p className="mb-6 text-gray-300">
-              Une erreur critique s'est produite. Nous sommes désolés pour la gêne occasionnée.
+              Une erreur critique s&apos;est produite. Nous sommes désolés pour la gêne occasionnée.
             </p>
             <Button onClick={reset} className="bg-purple-500 hover:bg-purple-600 text-white">
               Réessayer

@@ -1,4 +1,5 @@
-import { Sparkles } from "lucide-react"
+import { Sparkles } from "lucide-react";
+import Image from "next/image"; // Importation du composant Image de Next.js
 
 export default function BenefitsSection() {
   const benefits = [
@@ -31,7 +32,7 @@ export default function BenefitsSection() {
       description:
         "Au-delà de l'astrologie. Les cartes de tarot, la chiromancie, la numérologie et l'analyse des rêves sont tout aussi perspicaces.",
     },
-  ]
+  ];
 
   return (
     <section className="py-16 px-4 relative z-10">
@@ -41,7 +42,7 @@ export default function BenefitsSection() {
             <h2 className="text-4xl font-bold text-white mb-8">
               Avantages des Services
               <br />
-              d'Astrologie Nebula
+              d&apos;Astrologie Nebula
             </h2>
 
             <div className="space-y-6">
@@ -61,17 +62,18 @@ export default function BenefitsSection() {
 
           <div className="relative">
             <div className="relative w-full h-[500px] rounded-3xl overflow-hidden bg-indigo-900/30">
-              {/* Utilisation directe de l'image statique */}
-              <img
+              {/* Utilisation correcte du composant Image */}
+              <Image
                 src="/images/application-site-voyance-apperçu.webp"
                 alt="Application mobile Nebula montrant l'interface des conseillers et l'horoscope personnalisé"
                 className="object-contain w-full h-full"
+                fill // Utilisation de fill pour remplir le conteneur parent
+                priority // Optionnel : charge l'image en priorité si elle est importante pour le SEO
               />
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
-

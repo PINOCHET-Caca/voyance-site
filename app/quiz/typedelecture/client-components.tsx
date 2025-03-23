@@ -76,7 +76,7 @@ export function ReadingTypeOptions() {
       <div className="w-full max-w-3xl mx-auto text-center mb-8">
         <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Quel type de lecture vous intéresse?</h2>
         <p className="text-gray-300">
-          Nos médiums ont des domaines d'expertise uniques et des expériences de consultation variées.
+          Nos médiums ont des domaines d&aposexpertise uniques et des expériences de consultation variées.
         </p>
       </div>
 

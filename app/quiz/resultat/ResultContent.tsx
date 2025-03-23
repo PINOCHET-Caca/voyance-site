@@ -309,12 +309,12 @@ export default function ResultContent() {
                             </div>
                             <div className="text-center">
                               <p className="text-white font-bold">{reader.experience} ans</p>
-                              <p className="text-gray-300 text-xs">d'expérience</p>
+                              <p className="text-gray-300 text-xs">d&aposexpérience</p>
                             </div>
                           </div>
 
                           <div className="mb-4">
-                            <p className="text-white text-sm mb-2">Domaines d'expertise:</p>
+                            <p className="text-white text-sm mb-2">Domaines d&aposexpertise:</p>
                             <div className="flex flex-wrap gap-2">
                               {reader.fields?.map((field) => (
                                 <span key={field} className="bg-gray-700 text-white text-xs px-3 py-1 rounded-full">

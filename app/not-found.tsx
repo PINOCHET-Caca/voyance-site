@@ -7,9 +7,9 @@ export default function NotFound() {
       <div className="max-w-md text-center">
         <h2 className="text-4xl font-bold mb-4">404</h2>
         <h3 className="text-2xl font-semibold mb-4">Page non trouvée</h3>
-        <p className="mb-6 text-gray-300">La page que vous recherchez n'existe pas ou a été déplacée.</p>
+        <p className="mb-6 text-gray-300">La page que vous recherchez n&apos;existe pas ou a été déplacée.</p>
         <Link href="/">
-          <Button className="bg-purple-500 hover:bg-purple-600 text-white">Retour à l'accueil</Button>
+          <Button className="bg-purple-500 hover:bg-purple-600 text-white">Retour à l&apos;accueil</Button>
         </Link>
       </div>
     </div>

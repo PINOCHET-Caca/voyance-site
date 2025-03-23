@@ -124,7 +124,7 @@ export default function QuizDateClientPage() {
                     <option value="" disabled selected>
                       Mois
                     </option>
-                    {months.map((m, index) => (
+                    {months.map((m,) => (
                       <option key={m} value={m}>
                         {m}
                       </option>

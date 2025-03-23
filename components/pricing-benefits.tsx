@@ -52,7 +52,7 @@ export default function PricingBenefits() {
                 href="/quiz"
                 className="bg-purple-200 hover:bg-purple-300 text-indigo-900 font-bold py-3 px-6 rounded-full transition-colors"
               >
-                PROFITER DE L'OFFRE
+                PROFITER DE L&aposOFFRE
               </Link>
             </div>
           </div>

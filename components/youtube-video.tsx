@@ -62,7 +62,9 @@ export default function YouTubeVideo({ videoId, title, thumbnailUrl }: YouTubeVi
         content="Découvrez comment les lectures psychiques peuvent transformer votre vie avec Nebula, votre guide vers la clarté spirituelle."
       />
 
-      {!isPlaying ? (
+      {!isLoaded ? (
+        <div className="relative w-full h-full bg-indigo-900/50 animate-pulse" />
+      ) : !isPlaying ? (
         <div
           className="relative w-full h-full cursor-pointer bg-indigo-900/50"
           onClick={handlePlayClick}
@@ -107,4 +109,3 @@ export default function YouTubeVideo({ videoId, title, thumbnailUrl }: YouTubeVi
     </div>
   )
 }
-

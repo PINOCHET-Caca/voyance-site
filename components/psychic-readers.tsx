@@ -1,14 +1,13 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import Image from "next/image"
 import { Star, ArrowRight } from "lucide-react"
 import SignupModal from "@/components/signup-modal"
 import Link from "next/link"
 
-interface PsychicReader {
+export interface PsychicReader {
   id: string
   name: string
   rating: number
@@ -141,12 +140,15 @@ export default function PsychicReaders() {
     setIsModalOpen(true)
   }
 
+  // Trouver les données du lecteur sélectionné à partir de selectedReaderId
+  const selectedReader = psychicReaders.find((reader) => reader.id === selectedReaderId) || null
+
   return (
     <section className="pt-8 pb-16 px-4 relative z-10">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-white mb-4">Rencontrez nos médiums doués</h2>
         <p className="text-center text-gray-200 mb-12 max-w-3xl mx-auto">
-          Obtenez une lecture psychique pour clarifier votre chemin de vie, vous sentir plus confiant face à l'avenir,
+          Obtenez une lecture psychique pour clarifier votre chemin de vie, vous sentir plus confiant face à l&aposavenir,
           et simplement recevoir des conseils bienveillants sur votre amour, carrière, finances et autres domaines de
           vie.
         </p>
@@ -191,7 +193,7 @@ export default function PsychicReaders() {
                 <div className="flex items-center gap-6 mb-4 text-sm text-gray-300">
                   <div className="flex items-center gap-2">
                     <span className="text-purple-300">{reader.yearsExperience} ans</span>
-                    <span>d'expérience</span>
+                    <span>d&aposexpérience</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-purple-300">{reader.consultations}</span>
@@ -261,9 +263,12 @@ export default function PsychicReaders() {
         </div>
       </div>
 
-      {/* Modal de connexion/inscription */}
-      <SignupModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      {/* Modal de connexion/inscription avec le lecteur sélectionné */}
+      <SignupModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        selectedReader={selectedReader}
+      />
     </section>
   )
 }
-

@@ -95,9 +95,9 @@ export default function Testimonials() {
                 </div>
               </div>
               <blockquote className="text-gray-300 text-sm italic relative">
-                <span className="text-purple-300 text-3xl font-serif absolute -left-1 -top-2 opacity-50">"</span>
+                <span className="text-purple-300 text-3xl font-serif absolute -left-1 -top-2 opacity-50">&quot; </span>
                 <p className="pl-4">{testimonial.text}</p>
-                <span className="text-purple-300 text-3xl font-serif absolute right-0 bottom-0 opacity-50">"</span>
+                <span className="text-purple-300 text-3xl font-serif absolute right-0 bottom-0 opacity-50">&quot; </span>
               </blockquote>
             </div>
           ))}
@@ -106,4 +106,3 @@ export default function Testimonials() {
     </section>
   )
 }
-
